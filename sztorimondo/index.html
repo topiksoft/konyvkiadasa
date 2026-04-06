@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang='hu'>
 <head>
-    <title>Sztorimondó kiadási program</title>
+	<title>Sztorimondó kiadási program</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:url" content="https://konyvkiadasa.hu/">
+  <meta property="og:site_name" content="Könyvkiadása.hu">
+  <meta property="og:title" content="Sztorimondó kiadási program">
+  <meta property="og:description" content="A Sztorimondó könyvkiadási program az elsőkönyveseknek és a rétegkönyveknek ad lehetőséget.">
+  <meta property="og:locale" content="hu_hu">
+  <meta property="og:type" content="website">
 
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico"> 
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico"> 
 
-		<link href="../assets/bootstrap.min.css" rel="stylesheet">
+	<link href="../assets/bootstrap.min.css" rel="stylesheet">
 
+	<style>
+		@font-face {
+			font-family: 'Amarante';
+			src: url('../assets/Amarante-Regular.ttf') format('truetype');
+		}
+		@font-face {
+			font-family: 'Limelight';
+			src: url('../assets/Limelight-Regular.ttf') format('truetype');
+		}
+		body {
+			font-family: 'Amarante', sans-serif;
+		}
+
+	</style>
 </head>
 
 <body class="container-md col-md-6">
 
 <!-- Carousel Top -->
-<div id="boritok" class="carousel slide mx-auto" data-bs-ride="carousel" style="width: 400px; height: 675px;">
+<div id="boritok" class="carousel slide mx-auto" data-bs-ride="carousel" style="width: 200px; height: 338px;">
 
   <!-- Indicators/dots -->
 <!--
@@ -35,13 +55,16 @@
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="2000">
-      <img src="../assets/Kiss-Laszlo_A-pilota--medium.webp" alt="Kiss László: A pilóta (Könyv Guru, 2026) borítókép" class="d-block w-100" >
+      <img src="../assets/Kiss-Laszlo_A-pilota--small.webp" alt="Kiss László: A pilóta (Könyv Guru, 2026) borítókép" class="d-block w-100" >
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="../assets/Banszegi-Katalin_Kaukazus--medium.webp" alt="Bánszegi Katalin: Kaukázus (Ad Librum, 2025) borítókép" class="d-block w-100">
+      <img src="../assets/Banszegi-Katalin_Vietnam--small.webp" alt="Bánszegi Katalin: Vietnám (Ad Librum, 2024) borítókép" class="d-block w-100">
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="../assets/Szokolszky-Agnes_Igy-muzsikaltunk--medium.webp" alt="Szokolszky Ágnes: Így muzsikáltunk. Déki Lakatos Sándor cigányprímás élet- és családtörténete (Személyes Történelem, 2023) borítókép" class="d-block w-100">
+      <img src="../assets/Szokolszky-Agnes_Igy-muzsikaltunk--small.webp" alt="Szokolszky Ágnes: Így muzsikáltunk. Déki Lakatos Sándor cigányprímás élet- és családtörténete (Személyes Történelem, 2023) borítókép" class="d-block w-100">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="../assets/Garay-Zsuzsanna_A-kislany-es-a-madarijeszto--small.webp" alt="Garay Zsuzsanna: A kislány és a madárijesztő (Könyv Guru, 2025) boritókép" class="d-block w-100">
     </div>
 </div>
 
@@ -55,31 +78,34 @@
 </div>
 
 
-<h1>Sztorimondó könyvkiadás</h1>
+<h1 class='text-success'>Sztorimondó könyvkiadás</h1>
 
-<p>A Sztorimondó könyvkiadási program az <strong>elsőkönyveseknek</strong> és a <strong>rétegkönyveknek</strong> ad lehetőséget. Mivel a várható eladások nem elég magasak, a könyvkiadók gyakran nem foglalkoznak az olyan szerzőkkel, akiknek még nincs olvasótáboruk, és olyan könyvekkel, amelyek a témájuk folytán kis célközönséggel rendelkeznek.</p>
+<p>A <span class='text-success' style='font-family: Limelight, sans-serif'>Sztorimondó</span> könyvkiadási program az <strong>elsőkönyveseknek</strong> és a <strong>rétegkönyveknek</strong> ad lehetőséget. Mivel a várható eladások nem elég magasak, a könyvkiadók gyakran nem foglalkoznak az olyan szerzőkkel, akiknek még nincs olvasótáboruk, és olyan könyvekkel, amelyek a témájuk folytán kis célközönséggel rendelkeznek.</p>
 
 <!-- A program jellemzői -->
 <div id="jellemzok">
 
-<h2>A Sztorimondó könyvkiadási program jellemzői</h2>
+<h2 class='text-success'>A Sztorimondó könyvkiadási program jellemzői</h2>
 
 <p class="">
 	<strong>1. Felvállalt kiadói kiadás.</strong> Nem magánkiadás.
 	<button class="btn btn-sm btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKiadok" aria-expanded="false" aria-controls="collapseKiadok">Bővebben</button>
 </p>
 <div class="collapse" id="collapseKiadok">
+<!--
 	<div class="card card-body">
-	A Sztorimondó program mögött normális kiadók állnak, amelyek az olvasókért versenyeznek, nem a szerzők hiúságáért. Csak olyan könyveket jelentetnek meg, amelyek - kellő szerkesztéssel és vonzó kivitelben - elérik a könyvesbolti átlagszínvonalat. A regényeket a Könyv Guru Kiadó, a memoárokat a Személyes Történelem Kiadó, a tényirodalmat pedig az Ad Librum Kiadó adja ki.
+-->
+	<div class="mb-3">
+	A <span class='text-success' style='font-family: Limelight'>Sztorimondó</span> program mögött valódi kiadók állnak, amelyek az olvasókért versenyeznek, nem a szerzők hiúságáért. Csak olyan könyveket jelentetnek meg, amelyek - kellő szerkesztéssel és vonzó kivitelben - elérik a könyvesbolti átlagszínvonalat. A regények, novelláskötetek, mesekönyveket a <a href='https://konyv.guru/konyv-guru-kiado-konyvei/' target='_blank' class='text-success' style='font-family: Limelight'>Könyv Guru Kiadó</a>, a tényirodalmat az <a href='https://adlibrum.hu/' target='_blank' class='text-success' style='font-family: Limelight'>Ad Librum Kiadó</a>, a memoárokat pedig a <a href='https://szemelyestortenelem.hu/konyveink/' target='_blank' class='text-success' style='font-family: Limelight'>Személyes Történelem Kiadó</a> adja ki.
 	</div>
 </div>
 
 <p class="">
 	<strong>2. Professzionális kiadói folyamat.</strong> Valódi irodalmi szerkesztővel, igazi tördelővel és élvonalbeli nyomdákkal.
 	<button class="btn btn-sm btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSzakmaisag" aria-expanded="false" aria-controls="collapseSzakmaisag">Bővebben</button>
-	</p>
+</p>
 <div class="collapse" id="collapseSzakmaisag">
-	<div class="card card-body">
+	<div class="mb-3">
 		A szerkesztés külön szakma, aminek csak bázisa az irodalom szakos diploma. Mind a főszerkesztőnk, mind az adott kézirattal megbízott szerkesztők jelentős szakmai gyakorlattal rendelkeznek. A tördelés követi a magyar tipográfiai hagyományt (és persze nem Wordben készül). Olyan grafikusokat bízunk meg, akik az adott műfajban (pl. fantasy) már rendelkeznek portfólióval. A munkáinkra kiválasztott nyomdák óriási referenciával rendelkeznek (és a szerzők megnézhetik a könyvük nyomását). A nyomdai előkészítés koordinációját és a könyvészeti feladatokat (ISBN, kötelespéldányok a könyvtáraknak, terjesztői kiajánlások) szabványos, évtizedes kiadói tapasztalatra alapozott munkafolyamatokkal végezzük.
 	</div>
 </div>
@@ -92,7 +118,7 @@
 </p>
 
 <div class="collapse" id="collapseTerjesztes">
-  <div class="card card-body">
+  <div class="mb-3">
   A nyomtatott könyveket az összes fontos helyre eljuttatjuk:
 	<ul>
 		<li>a Libri bolthálózatába (Magyarország legnagyobb könyvesboltlánca);</li>
@@ -112,12 +138,12 @@
 
 <p class="" id="szerzoihozzajarulas">
 	<strong>4. Szerzői hozzájárulással.</strong> 
-		Örömmel adjuk ki a még kipróbálatlan szerzők írásait és a szűkebb célközönségű rétegkönyveket, azonban nem tudjuk ezt megtenni előzetes anyagi támogatás nélkül.
+		Örömmel adjuk ki a még kipróbálatlan szerzők írásait és a szűkebb célközönségű rétegkönyveket, azonban nem tudjuk ezt megtenni előzetes <strong>anyagi támogatás</strong> nélkül.
 		<button class="btn btn-sm btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHozzajarulas" aria-expanded="false" aria-controls="collapseHozzajarulas">Bővebben</button>
 </p>
 
 <div class="collapse" id="collapseHozzajarulas">
-  <div class="card card-body">
+  <div class="mb-3">
 
 	<table class="table table-striped">
 	<caption>Akár elsőkönyvesekről, akár rétegkönyvek kiadásáról van szó, a várható kisebb forgalom miatt mindenképp szükséges anyagi támogatás a megjelentetéshez. Ennek mértéke a könyvártól függ, mert az tükrözi a kiadási költségeket. Az alábbiakbak folyószöveges, fekete-fehér könyvekre (pl. regényekre) mutatjuk a 2026-os könyvárakat és a kiadáshoz szükséges szerzői hozzájárulást.</caption>
@@ -138,7 +164,7 @@
 	<button class="btn btn-sm btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKorrektseg" aria-expanded="false" aria-controls="collapseKorrektseg">Bővebben</button>
 	</p>
 <div class="collapse" id="collapseKorrektseg">
-	<div class="card card-body">
+	<div class="mb-3">
 		Mindenről szerződést kötünk és áfás számlát adunk. A kereskedelmi árrés (ami 50-55%) és a nyomdaköltség (kb. 25%) után a kiadóhoz jutó összeget lényegében elfelezzük, így a jogdíj a könyvárra írt fogyasztói ár 10%-a. A forgalomról havonta elszámolunk emailes értesítők formájában.
 	</div>
 </div>
@@ -148,7 +174,7 @@
 <!-- GYÍK - FAQ (accordion) -->
 <div id="gyik">
 
-<h2>Gyakori kérdések a Sztorimondó könyvkiadási programról</h2>
+<h2 class='text-success'>Gyakori kérdések a Sztorimondó könyvkiadási programról</h2>
 <p>A Sztorimondó könyvkiadási már sok éve működik, így sok releváns információt tudunk kínálni már a jelentkezés előtt is.</p>
 <!-- aria-expanded="true" és "accordion-collapse collapse show": már megnyitáskor kibontja -->
 <div class="accordion" id="faq">
@@ -178,13 +204,25 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mindenkitkiadnake" aria-expanded="false" aria-controls="mindenkitkiadnake">
         Mindenkit kiadnak, aki jelentkezik?
       </button>
     </h2>
-    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faq">
+    <div id="mindenkitkiadnake" class="accordion-collapse collapse" data-bs-parent="#faq">
       <div class="accordion-body">
-        Egyáltalán nem! Sajnos a jelentkezők többségét el kell utasítanunk, mert csak olyan könyvet tudunk felvállalni, ami - professzionális szerkesztés és nyomdai előkészítés után - bevihető könyvesboltba. Kiadóként nem tehetjük meg, hogy az átlagszínvonal alá menjünk, mert a kereskedők nem fogadnák többé a kiadványainkat.
+        Egyáltalán nem! Sajnos a jelentkezők többségét el kell utasítanunk, mert csak olyan könyvet tudunk felvállalni, ami - professzionális szerkesztés és nyomdai előkészítés után - bevihető könyvesboltba. Kiadóként nem tehetjük meg, hogy az átlagszínvonal alá menjünk, mert a kereskedők nem fogadnák többé a kiadványainkat. <strong>Az elsőkönyveseknél, valamint a szépirodalmi és rétegkönyveknél nem cél a nagy eladott példányszám, de fontos a belső értékük. Ezért csak olyan könyvet vállalunk fel, amelyekben megvan ez az érték.</strong>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#melyikkiado" aria-expanded="false" aria-controls="melyikkiado">
+        Melyik kiadónál jelenik meg a könyvem?
+      </button>
+    </h2>
+    <div id="melyikkiado" class="accordion-collapse collapse" data-bs-parent="#faq">
+      <div class="accordion-body">
+        Ha be tudjuk fogadni a kiadási programunkba, a könyv témájától függ a kiadói név. A regények, novelláskötetek, mesekönyveket a <a href='https://konyv.guru/konyv-guru-kiado-konyvei/' target='_blank' class='text-success' style='font-family: Limelight'>Könyv Guru Kiadó</a>, az ismeretterjesztő könyvek az <a href='https://adlibrum.hu/' target='_blank' class='text-success' style='font-family: Limelight'>Ad Librum Kiadó</a>, a visszaemlékezések pedig a <a href='https://szemelyestortenelem.hu/konyveink/' target='_blank' class='text-success' style='font-family: Limelight'>Személyes Történelem Kiadó</a> kínálatába kerülnek. A fentiek mind az Ad Librum Kft. kiadói nevei (imprints).
       </div>
     </div>
   </div>
@@ -508,7 +546,7 @@
 <div id='contactform'>
 
 	<div>
-		<h2 class="text-success" style="margin-top: 30px">Érdeklődés könyv kiadásáról</h2>
+		<h2 class='text-success mt-4'>Érdeklődés könyv kiadásáról</h2>
 		<p>Az alábbi űrlapon tudja jelezni az érdeklődését a kiadási program iránt. A jelentkezés kötelezettségmentes, de feltételezi, hogy a fenti feltételeket megismerte és adott esetben vállalná is. Ha vissza akar ugorni a szerzői hozzájárulásra vonatkozó táblázatra, <a href='#szerzoihozzajarulas'>kattintson ide!</a> (A <em>Bővebben</em> gomb megnyitja.)</p>
 	</div>
 
@@ -547,11 +585,7 @@
 		<input type="text" class="form-control control-label border-success" name="tel" id="tel">
 	</div>
 	<div class="mb-3">
-		<label for="irodalmimult" class="form-label text-success">Eddigi írói tevékenysége (ha volt):</label>
-		<textarea class="form-control control-label border-success" rows="2" placeholder="" name="irodalmimult" id="irodalmimult"></textarea>
-	</div>
-	<div class="mb-3">
-		<label for="megjegyzes" class="form-label text-success">Bármilyen egyéb megjegyzés:</label>
+		<label for="megjegyzes" class="form-label text-success">Eddigi írói tevékenysége és bármilyen egyéb megjegyzés:</label>
 		<textarea class="form-control control-label border-success" rows="2" placeholder="" name="megjegyzes" id="megjegyzes"></textarea>
 	</div>
 	<div class="form-check mb-3">
@@ -567,35 +601,34 @@
 	</div>
 </form>
 
-<p>Az elsőkönyveseknél, valamint a szépirodalmi és rétegkönyveknél nem cél a nagy eladott példányszám, de fontos a belső értékük. Ezért csak olyan könyvet vállalunk fel, amelyekben megvan ez az érték.</p>
-
 </div> <!-- jelentkezési rovat vége -->
+
+<!-- Link a szolgáltatásokhoz -->
+<div class='row justify-content-center my-5'>
+	<p class='col-6 h1 text-center'>
+		Vagy megpróbálja maga kiadni?<br/>
+		<a href='../szolgaltatasok/' style='font-family: Limelight, sans-serif;' role='button' class='btn btn-warning btn-lg'>Nem hagyunk magadra!</a>
+	</p>
+</div>
+
 
 
 <!-- Carousel Bottom -->
-<div id="boritoklent" class="carousel slide mx-auto" data-bs-ride="carousel" style="width: 400px; height: 675px;">
+<div id="boritoklent" class="carousel slide mx-auto" data-bs-ride="carousel" style="width: 200px; height: 338px;">
 
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="../assets/Kertesz-Viktor_Sikba-zart-ter--small.webp" alt="Kertesz Viktor: Síkba zárt tér (Ad Librum, 2025) borítókép" class="d-block w-100">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="../assets/Lizy-Smith_Profilozo--small.webp" alt="Lizy Smith: Profilozó (Könyv Guru, 2025) borítókép" class="d-block w-100">
+    </div>
     <div class="carousel-item active" data-bs-interval="2000">
-      <img src="../assets/Garay-Zsuzsanna_A-kislany-es-a-madarijeszto--medium.webp" alt="Garay Zsuzsanna: A kislány és a madárijesztő (Könyv Guru, 2025) boritókép" class="d-block w-100">
+      <img src="../assets/Magashegyi-Jozsef_1160--small.webp" alt="Magashegyi József: 1160 (Könyv Guru, 2025) borítókép" class="d-block w-100">
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="../assets/Kertesz-Viktor_Sikba-zart-ter--medium.webp" alt="Kertesz Viktor: Síkba zárt tér (Ad Librum, 2025) borítókép" class="d-block w-100">
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="../assets/Lizy-Smith_Profilozo--medium.webp" alt="Lizy Smith: Profilozó (Könyv Guru, 2025) borítókép" class="d-block w-100">
-    </div>
-<!--
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="../assets/A-S-Field_Tavlatok--cover.jpg" alt="Field: Távlatok (Könyv Guru, 2025) borítókép" class="d-block w-100">
-    </div>
--->
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="../assets/Magashegyi-Jozsef_1160--medium.webp" alt="Magashegyi József: 1160 (Könyv Guru, 2025) borítókép" class="d-block w-100">
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="../assets/H-P-Bigest_Isten-urhajoja--medium.webp" alt="H.P. Bigest: Isten űrhajója (Könyv Guru, 2026) borítókép" class="d-block w-100">
+      <img src="../assets/H-P-Bigest_Isten-urhajoja--small.webp" alt="H.P. Bigest: Isten űrhajója (Könyv Guru, 2026) borítókép" class="d-block w-100">
     </div>
   </div>
   
