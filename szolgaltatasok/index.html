@@ -2,6 +2,7 @@
 <html lang='hu'>
 <head>
 	<title>Könyvkiadási szolgáltatások szerzőknek és kiadóknak</title>
+	<description>Nem kell magadra maradnod, csak azért, mert magad adod ki a könyvedet!</description>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +17,23 @@
 		src: url('../assets/Federo-Regular.ttf') format('truetype');
 	}
 	@font-face {
+		font-family: 'Ribeye';
+		src: url('../assets/Ribeye-Regular.ttf') format('truetype');
+	}
+	@font-face {
+		font-family: 'Combo';
+		src: url('../assets/Combo-Regular.ttf') format('truetype');
+	}
+	@font-face {
+		font-family: 'Amarante';
+		src: url('../assets/Amarante-Regular.ttf') format('truetype');
+	}
+	@font-face {
 		font-family: 'Limelight';
 		src: url('../assets/Limelight-Regular.ttf') format('truetype');
 	}
 	body {
-		font-family: 'Federo', sans-serif;
+		font-family: 'Amarante', sans-serif;
 	}
 
 	h1,h3 {color: #E28F12;}
@@ -63,7 +76,7 @@
 
 <h1>Könyvkiadási szolgáltatások dinamikus szerzőknek és áramvonalas kiadóknak</h1>
 
-<p class='lead'><em>Nem kell magadra maradnod, csak azért mert magad adod ki a könyvedet!</em> Az alábbi könyvkiadási szolgáltatásaink segítik az öngondoskodó szerzőket és azokat a kiadókat, akik nem akarják a kiadás minden fázisát maguk megszervezni.</p>
+<p class='lead'><em>Nem kell magadra maradnod, csak azért, mert magad adod ki a könyvedet!</em> Az alábbi könyvkiadási szolgáltatásaink segítik az öngondoskodó szerzőket és azokat a kiadókat, akik nem akarják a kiadás minden fázisát maguk megszervezni.</p>
 
 <h3>1. Terjesztés</h3>
 	<p>Vállaljuk mások által kiadott nyomtatott könyvek terjesztését <strong>a Libri és Líra boltláncaiban, a Bookline és a Book24 webboltokban, a Könyvtárellátón keresztül és a saját webboltunkban  (Könyvesbolt.Online)</strong>. A Libri, Líra, a KELLO és a Book24 egyben nagykereskedő is, így a könyveink a kisebb webboltokba, független könyvesboltokba és a határon túlra is eljutnak.</p>
@@ -173,7 +186,7 @@
 		<li>a nyelvezetet a célközönség szempontjából,</li>
 		<li>az esetleges illusztrációkat.</li>
 	</ul>
-	<p>Az értékelés része a <strong>tanácsadás</strong> arról, mit és hogyan lehetne javítani a kéziraton. Ha a magyarázathoz szükséges, példákat is hoz a vélemény, azonban az értékelési szolgáltatás nem foglalja magában a szerkesztést, tehát a teljes körű javítást és átírást. Erre tudunk értő szerkesztőt ajánlani.</p>
+	<p>Az értékelés része a <strong>tanácsadás</strong> arról, mit és hogyan lehetne javítani a kéziraton. Ha a magyarázathoz szükséges, példákat is hoz a vélemény, azonban az értékelési szolgáltatás nem foglalja magában a szerkesztést, tehát a kézirat javítását vagy átírását.</p>
 	<p>Az elkészült vélemény csak Önnek szól, 100%-ig <strong>bizalmas</strong>, és mindig az is marad.</p>
 	<p>Az értékelő személye az elfogulatlanság érdekében anonim, azonban a véleményt a <strong>Könyv Guru</strong> hitelesíti, és a megrendelő &#8211; saját döntése alapján &#8211; akár nyilvánosságra is hozhatja.</p>
 	<p>A <strong>szolgáltatás díja</strong> mindössze 80.000 Ft (400.000 karakterig). Az összeg számla ellenében előre fizetendő átutalással vagy bankkártyával. Ha a kéziratát később kiadjuk a <a href="https://konyvkiadasa.hu/sztorimondo/">Sztorimondó programunkban</a>, az értékelésre kifizetett díj felét beszámoljuk a szerzői hozzájárulásba.</p>
@@ -214,28 +227,35 @@
 	</div>
 </div>
 
+<div>
+	<p>
+		Mégiscsak inkább könyvkiadó? <a href='../sztorimondo/' style='font-family: Limelight, sans-serif;' role='button' class='btn btn-success'>Sztorimondó!</a>
+	</p>
+</div>
+
+
 <!-- Carousel Bottom
 (mx-auto: középre)-->
 <div id="boritoklent" class="carousel slide mx-auto mt-5" data-bs-ride="carousel" style="width: 200px; height: 338px;">
 
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="2000">
+    <div class="carousel-item active" data-bs-interval="3000">
       <img src="../assets/Garay-Zsuzsanna_A-kislany-es-a-madarijeszto--small.webp" alt="Garay Zsuzsanna: A kislány és a madárijesztő (Könyv Guru, 2025) boritókép" class="d-block w-100">
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item" data-bs-interval="3000">
       <img src="../assets/Kertesz-Viktor_Sikba-zart-ter--small.webp" alt="Kertesz Viktor: Síkba zárt tér (Ad Librum, 2025) borítókép" class="d-block w-100">
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item" data-bs-interval="3000">
       <img src="../assets/Lizy-Smith_Profilozo--small.webp" alt="Lizy Smith: Profilozó (Könyv Guru, 2025) borítókép" class="d-block w-100">
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item" data-bs-interval="3000">
       <img src="../assets/A-S-Field_Tavlatok--small.webp" alt="Field: Távlatok (Könyv Guru, 2025) borítókép" class="d-block w-100">
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item" data-bs-interval="3000">
       <img src="../assets/Magashegyi-Jozsef_1160--small.webp" alt="Magashegyi József: 1160 (Könyv Guru, 2025) borítókép" class="d-block w-100">
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item" data-bs-interval="3000">
       <img src="../assets/H-P-Bigest_Isten-urhajoja--small.webp" alt="H.P. Bigest: Isten űrhajója (Könyv Guru, 2026) borítókép" class="d-block w-100">
     </div>
   </div>
